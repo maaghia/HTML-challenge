@@ -5,31 +5,27 @@
     <title>HTML challenge</title>
 </head>
 <body>
-    <form action="">
+    <form action=""  align="center">
         <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
     <div> 
         <label for="session-date">Session Date:</label> 
-        <input type="date" name="session-date">
+        <input type="date" name="session-date" placeholder="Enter the session's date">
         <label for="subject">Subject:</label>
-        <select name="subject" id="subject">Other
+        <select name="subject" id="subject" aria-placeholder="Choose one">Other
             <option value="Other">Other</option>
             <option value="Web-Dev">Web Devalopement</option>
             <option value="ui-ux">UI-UX design</option>
             <option value="data-sc">Data science</option>
             <option value="cyper-security">Cyber Security</option>
         </select>
-        
     </div>
-    
+    <br>
     <div>
     <label for="topics">Please mention any topics you would like to ask further questions or gather more information on.</label>
     <br>
-    <textarea name="topics" id="" cols="30" rows="7" placeholder="...">
-
-    </textarea>
-    
+    <textarea name="topics" id="" cols="30" rows="7" placeholder="Enter your answer"></textarea>
     </div>
-    
+    <br>
     <div>
         <label for="yn">Do you study at home?</label>
         <span><input type="radio" name="yn">Yes<input type="radio" name="yn">No</span>
@@ -44,47 +40,41 @@
         <input type="checkbox" id="third-choice" name="choice3" value="choice3">
         <label for="choice3">Phone apps</label>
     </div>
-    
+    <br> 
     <div>
         <label for="rating1">
             On a scale of 1 to 5, please indicate how informative you felt the session was.
         </label> 
-        <span><input type="number" name="rating1"></span>
+        <span><input type="number" name="rating1" placeholder="5* being the most informative"></span>
     </div>
+    <br>
     <div>
         <label for="rating2">
             On a scale of 1 to 5, please indicate how engaging you felt the session was.
         </label>
-        <span><input type="number" name="rating2"></div>
+        <span><input type="number" name="rating2" placeholder="5* being the most engaging"></div>
     <div>
+        <br>
         <label for="rating3">
             On a scale of 1 to 5, please indicate how likely you feel it is that you would recommend the course to a friend.
         </label>
-        <span><input type="number" name="rating3">
+        <span><input type="number" name="rating3" placeholder="5* if you have someone in mind">
     </div>
-    
+    <br>
     <div>
         <label for="feedback">
             Please use this space to give us any other feedback you may have.
         </label>
         <br>
-        <textarea name="feedback" id="feedback" cols="30" rows="7" placeholder="type your feedback here">
-
-        </textarea>
+        <textarea name="feedback" id="feedback" cols="30" rows="7" placeholder="Type your feedback here"></textarea>
     </div>
-    
+    <br>
     <div>
         <label for="email">Email address:</label>
-        <span><input type="email" name="email"></span>
+        <span><input type="email" name="email" placeholder="Enter a valid email"></span>
     </div>
-    
+    <br>
     <input type="submit" value="Submit">
     </form>
 </body>
 </html>
-<style>
-    body{
-        text-align: center;
-        line-height: 30px;
-    }
-</style>
